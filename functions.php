@@ -31,6 +31,7 @@ add_theme_support( 'post-thumbnails' );
 * Posts
 **/
 
+
 /** Content **/ 
 
 add_action('init', 'start');
@@ -114,20 +115,63 @@ function users(){
 
 
 
-
+function tutsplus_widgets_init() {
+ 
+   
+    register_sidebar( array(
+        'name' => __( 'First Footer Widget Area', 'tutsplus' ),
+        'id' => 'footer1',
+        'description' => __( 'The first footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    
+    register_sidebar( array(
+        'name' => __( 'Second Footer Widget Area', 'tutsplus' ),
+        'id' => 'footer2',
+        'description' => __( 'The second footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+   
+    register_sidebar( array(
+        'name' => __( 'Third Footer Widget Area', 'tutsplus' ),
+        'id' => 'footer3',
+        'description' => __( 'The third footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    
+    register_sidebar( array(
+        'name' => __( 'Fourth Footer Widget Area', 'tutsplus' ),
+        'id' => 'footer4',
+        'description' => __( 'The fourth footer widget area', 'tutsplus' ),
+        'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+         
+}
+// Register
+add_action( 'widgets_init', 'tutsplus_widgets_init' );
 
 
 /** Menus **/
 
-function register_my_menus() {
-  register_nav_menus(
-    array(
-      'header-menu' => __( 'Header Menu' ),
-      /** 'extra-menu' => __( 'Extra Menu' ) **/
-    )
-  );
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
 }
-add_action( 'init', 'register_my_menus' );
+add_action( 'init', 'register_my_menu' );
 
 /** Theme Support **/
 

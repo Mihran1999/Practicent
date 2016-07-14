@@ -13,7 +13,7 @@
 		    	</div>
 		        			        	
 		    	<div class="header_menu">
-		    		<?php wp_nav_menu(); ?>
+		    		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		    	</div>	
 
 		    	<div class="mobile_menu">
@@ -27,7 +27,7 @@
 
 		    		<div class="header_menu_responsive">
 		    			<a href="" id="sign-in" class="for_mobile">Sign in</a>
-		    			<?php wp_nav_menu(); ?>
+		    			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		    		</div>
 
 		    	</div>	
@@ -92,7 +92,7 @@
 
 	                <?php endif; ?>
 
-	                <form>
+	                <form id="form-section-2">
 	                	<ul>
 
 	                		<li>
@@ -168,10 +168,11 @@
 	            <?php else: ?>
 
 	            <?php endif; ?>
+	            <div class="button_container">
+	    			<button id="more-moduls" class="btn btn-primary">More moduls</button>
+	    		</div>
 	    	</ul>        
-	    	<div class="button_container">
-	    		<button id="more-moduls" class="btn btn-primary">More moduls <i class="fa fa-angle-right"></i></button>
-	    	</div>
+
 	    </div>
 		</section>
 

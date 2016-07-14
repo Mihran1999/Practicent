@@ -8,6 +8,10 @@ body {
 	padding: 0;
 }
 
+.controller {
+	overflow: hidden;
+}
+
 /** start 'Start Page' **/
 
 #page_start {
@@ -15,7 +19,6 @@ body {
 	float: left;
 	width: 100%;
 	padding: 0 !important;
-}
 .header {
 	position: relative;
 	height: 95px;
@@ -26,38 +29,39 @@ body {
 	font-size: 17px !important;
 	font-weight: normal !important;
 	font-stretch: condensed !important;
-}
-.logo {
-	float: left;
-	margin-right: 100px;
-}
-.menu {
-	float: left;
-} 
-.menu {
-	a {
-		color: #fff;
+	.logo {
+		float: left;
+		margin-right: 100px;
 	}
-	a:hover {
+	.menu {
+		float: left;
+	} 
+	.menu {
+		a {
+			color: #fff;
+		}
+		a:hover {
+			text-decoration: none !important;
+			color: #fff;
+		}
+	}
+	.menu  {
+		li {
+			display: inline-block;
+			margin-left: 45px;
+		}
+	}
+	#sign-in {
+		padding: 7px 42px 7px 42px;
+		float: right;
+		background-color: #249ed9;
+		color: #fff;
+		border-radius: 20px;
+	}
+	#sign-in:hover {
 		text-decoration: none !important;
-		color: #fff;
 	}
-}
-.menu  {
-	li {
-		display: inline-block;
-		margin-left: 45px;
 	}
-}
-#sign-in {
-	padding: 7px 42px 7px 42px;
-	float: right;
-	background-color: #249ed9;
-	color: #fff;
-	border-radius: 20px;
-}
-#sign-in:hover {
-	text-decoration: none !important;
 }
 .header_content {
 	text-align: center;
@@ -82,6 +86,7 @@ body {
 	position: relative;
 	top: 3em;
 	z-index: 9;
+	overflow: hidden;
 	img {
 		max-width: 100%;
 	}
@@ -116,7 +121,13 @@ body {
 		z-index: 6;
 	}
 }
-
+.for_mobile {
+	position: relative;
+	float: right;
+    top: 15px;
+    right: 20px;
+    display: block !important;
+}
 #line {
 	height: 3px;
 	width: 40px;
@@ -158,6 +169,7 @@ body {
 	-moz-box-shadow: inset 0px 23px 35px -13px rgba(0,0,0,0.38);
 	box-shadow: inset 0px 23px 35px -13px rgba(0,0,0,0.38);
 	padding: 25px 0px 35px 0px;
+	height: 315px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -165,9 +177,8 @@ body {
     width: 100%;
     cursor: default;
     display: none;
-
 	li {
-		display: block;
+		display: block !important;
 		margin-bottom: 15px;
 		border-bottom: 2px solid #8d9daf;
 		line-height: 3em;
@@ -207,7 +218,7 @@ body {
 		margin-left: 60px !important;
 	}
 }
-form {
+#form-section-2 {
 		margin-right: 66px !important;
 		ul, li {
 			display: block !important;
@@ -275,6 +286,10 @@ form {
 	font-stretch: condensed !important;
 	.container_li {
 		margin-left: -30px;
+	}
+	.wrapper_services {
+		width: 1319px;
+		margin: 0 auto;
 	}
 	#box {
 		width: 410px;
@@ -434,6 +449,100 @@ form {
 	}
 }	
 
+/** end 'Users' **/
+
+/************/
+
+/** start 'Footer' **/
+
+.footer {
+	background-color: #2e3640;
+	float: left;
+	width: 100%;
+	padding: 35px  0 10px 0;
+	.footer_wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+	h3 {
+		margin-left: 40px;
+		margin-bottom: 35px !important;
+		font-size: 14px;
+		color: #ffffff;
+	}
+	.menu li {
+		list-style-type: none;
+		margin-bottom: 7px;
+	}
+	.menu a,p {
+		font-weight: 400;
+		text-decoration: none !important;
+		color: #838383 !important;
+	}
+	#custom-text {	
+		margin-top: -4px;
+		margin-left: 40px;
+	}
+	#mail-submit {
+		position: relative;
+		right: 35px;
+    	float: right;
+		#mail-sender {
+			height: 33px;
+    		width: 60px;
+			position: absolute;
+    		right: 15px;
+    		background: url('images/mail-icon.png')  #249ed9;
+    		background-position: 4px -3px;
+    		border: 0;
+    		border-radius: 20px;
+		}
+		h3 {
+			margin-left: 0;
+			margin-bottom: 55px !important;
+		}
+		input {
+			width: 100%;
+			padding: 6px 0px 7px 20px;
+    		border: 0;
+    		border-radius: 20px;
+		}
+	}
+	.copy_logo {
+		width: 100% !important;
+		margin-top: 9em;
+	}
+	#footer-logo {
+		float: left;
+		margin-left: 35px;
+		margin-right: 20px;
+		img {
+			max-width: 100%;
+		}
+	}
+	#footer-copy {
+		position: relative;
+    	top: 18px;
+    	float: left;
+    	color: #838383;
+	}
+	#social-links {
+		float: right;
+		li {
+			margin-right: 5px;
+			display: inline-block;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -456,6 +565,10 @@ form {
 
 
 @media only screen and (max-width: 1330px) {
+	#services .wrapper_services {
+		width: 100% !important;
+		margin: 0 !important;
+	}
 	#box {
 		width: 350px !important;
 	}
@@ -499,6 +612,14 @@ form {
 		width: 200px !important;
 	}
 }
+@media only screen and (max-width: 775px) {
+	#mail-submit {
+		margin-right: 35px;
+	}
+	#copy_logo {
+		width: 70%;
+	}
+}
 @media only screen and (max-width: 705px) {
 	#box {
 		width: 410px !important;
@@ -508,8 +629,24 @@ form {
 	}
 	#more-moduls {
 		width: 65% !important;
-		margin-left: 50px !important;
+		margin-left: 27px !important;
 		float: none !important;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.footer #footer-logo {
+		img {
+			width: 80%;
+		}
+	}
+	.footer #footer-copy {
+		float: none !important; 
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 475px) {
+	#box {
+		width: 100% !important;
 	}
 }
 @media only screen and (max-width: 445px) {
@@ -520,36 +657,39 @@ form {
 		top: 0 !important;
 	}
 }
-@media only screen and (max-width: 475px) {
-	#box {
-		width: 100% !important;
+@media only screen and (max-width: 435px) {
+	.footer #footer-copy {
+		float: left !important; 
+		margin-left: 40px;
+		margin-top: -20px;
 	}
 }
-
 @media only screen and (max-width: 1145px) {
-	form {
+	#form-section-2 {
 		input {
 			width: 46% !important;
 		}
 	}
 }
 @media only screen and (max-width: 1095px) {
-	.header_menu {
-		display: none;
-	}
-	#sign-in {
-		display: none;
-	}
-	#button {
-		display: block !important;
-	}
-	.menu li {
-		padding: 0 !important;
-	}
-	.menu {
-		float: none !important;
-		margin-left: -85px;
-	}
+	.header {
+		.header_menu {
+			display: none;
+		}
+		#sign-in {
+			display: none;
+		}
+		#button {
+			display: block !important;
+		}
+		.menu li {
+			padding: 0 !important;
+		}
+		.menu {
+			float: none !important;
+			margin-left: -85px;
+		}
+	}	
 }
 
 @media only screen and (min-width: 1095px) {
@@ -557,22 +697,38 @@ form {
 		display: none !important;
 	}
 }
-.for_mobile {
-	position: relative;
-	float: right;
-    top: 15px;
-    right: 20px;
-    display: block !important;
+@media only screen and (max-width: 991px) {
+	.footer .footer_wrapper {
+		width: 100% !important;
+	}
+	.col-xs-6 {
+		width: 17% !important;
+	}
+	.footer #mail-submit {
+		position: relative;
+		top: 0 !important;
+    	left: 40px;
+    	float: left;
+    	width: 250px !important;
+	}
 }
 @media only screen and (max-width: 970px) {
-	form {
+	#form-section-2 {
 		input {
 			width: 80% !important;
 		}
 	}
 }
+@media only screen and (max-width: 880px) {
+	.col-xs-6 {
+		width: 21% !important;
+	}
+	.footer #mail-submit h3 {
+		margin-bottom: 25px !important;
+	}
+}
 @media only screen and (max-width: 770px) {
-	form {
+	#form-section-2 {
 		input {
 			width: 100% !important;
 		}
@@ -585,14 +741,28 @@ form {
 		font-size: 20px !important;
 	}
 }
+@media only screen and (max-width: 630px) {
+	.footer .footer_wrapper {
+		width: 88% !important;
+		margin: 0;
+	}
+}
 @media only screen and (max-width: 620px) {
 	#form {
 		padding: 58px 0 58px 0 !important;
 	}
-	form {
+	#form-section-2 {
 		input {
 			width: 100% !important;
 		}
+	}
+	.col-xs-6 {
+		width: 33% !important;
+	}
+	#mail-submit {
+		width: 290px;
+		margin-right: 5px;
+		top: 0 !important;
 	}
 }
 @media only screen and (max-width: 550px) {
@@ -610,6 +780,9 @@ form {
 	#words {
 		width: auto !important;
 	}
+	#mail-submit {
+		width: 255px;
+	}
 }
 @media only screen and (max-width: 445px) {
 	.header {
@@ -619,6 +792,18 @@ form {
 		img {
 			width: 90%;
 		}
+	}
+	.header #button {
+		margin-top: -40px !important;
+	}
+	.footer_wrapper {
+		width: 81% !important;
+		margin: 0 !important;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.col-xs-6 {
+		width: 50% !important;
 	}
 }
 @media only screen and (max-width: 404px) {
@@ -632,6 +817,11 @@ form {
 	}
 	#button {
 		margin-top: -45px !important;
+	}
+}
+@media only screen and (max-width: 395px) {
+	.col-xs-6 {
+		width: 50%;
 	}
 }
 @media only screen and (max-width: 365px) {
@@ -663,5 +853,8 @@ form {
 @media only screen and (max-width: 310px) {
 	.header {
 		padding: 24px 15px 24px 15px !important;
+	}
+	.footer #mail-submit {
+		width: 90%;
 	}
 }

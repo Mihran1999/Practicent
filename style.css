@@ -5,50 +5,46 @@ body {
   margin: 0;
   padding: 0; }
 
+.controller {
+  overflow: hidden; }
+
 /** start 'Start Page' **/
 #page_start {
   background-color: #2e3640;
   float: left;
   width: 100%;
   padding: 0 !important; }
-
-.header {
-  position: relative;
-  height: 95px;
-  padding: 24px 62px 24px 62px;
-  margin-bottom: 130px;
-  z-index: 5;
-  font-family: Roboto !important;
-  font-size: 17px !important;
-  font-weight: normal !important;
-  font-stretch: condensed !important; }
-
-.logo {
-  float: left;
-  margin-right: 100px; }
-
-.menu {
-  float: left; }
-
-.menu a {
-  color: #fff; }
-.menu a:hover {
-  text-decoration: none !important;
-  color: #fff; }
-
-.menu li {
-  display: inline-block;
-  margin-left: 45px; }
-
-#sign-in {
-  padding: 7px 42px 7px 42px;
-  float: right;
-  background-color: #249ed9;
-  color: #fff;
-  border-radius: 20px; }
-
-#sign-in:hover {
-  text-decoration: none !important; }
+  #page_start .header {
+    position: relative;
+    height: 95px;
+    padding: 24px 62px 24px 62px;
+    margin-bottom: 130px;
+    z-index: 5;
+    font-family: Roboto !important;
+    font-size: 17px !important;
+    font-weight: normal !important;
+    font-stretch: condensed !important; }
+    #page_start .header .logo {
+      float: left;
+      margin-right: 100px; }
+    #page_start .header .menu {
+      float: left; }
+    #page_start .header .menu a {
+      color: #fff; }
+    #page_start .header .menu a:hover {
+      text-decoration: none !important;
+      color: #fff; }
+    #page_start .header .menu li {
+      display: inline-block;
+      margin-left: 45px; }
+    #page_start .header #sign-in {
+      padding: 7px 42px 7px 42px;
+      float: right;
+      background-color: #249ed9;
+      color: #fff;
+      border-radius: 20px; }
+    #page_start .header #sign-in:hover {
+      text-decoration: none !important; }
 
 .header_content {
   text-align: center;
@@ -70,7 +66,8 @@ body {
   text-align: center;
   position: relative;
   top: 3em;
-  z-index: 9; }
+  z-index: 9;
+  overflow: hidden; }
   #img-center img {
     max-width: 100%; }
 
@@ -100,6 +97,13 @@ body {
     float: right;
     margin-top: 10px;
     z-index: 6; }
+
+.for_mobile {
+  position: relative;
+  float: right;
+  top: 15px;
+  right: 20px;
+  display: block !important; }
 
 #line {
   height: 3px;
@@ -142,6 +146,7 @@ body {
   -moz-box-shadow: inset 0px 23px 35px -13px rgba(0, 0, 0, 0.38);
   box-shadow: inset 0px 23px 35px -13px rgba(0, 0, 0, 0.38);
   padding: 25px 0px 35px 0px;
+  height: 315px;
   position: absolute;
   left: 0;
   right: 0;
@@ -150,7 +155,7 @@ body {
   cursor: default;
   display: none; }
   .header_menu_responsive li {
-    display: block;
+    display: block !important;
     margin-bottom: 15px;
     border-bottom: 2px solid #8d9daf;
     line-height: 3em; }
@@ -183,14 +188,14 @@ body {
     margin-top: 10px !important;
     margin-left: 60px !important; }
 
-form {
+#form-section-2 {
   margin-right: 66px !important; }
-  form ul, form li {
+  #form-section-2 ul, #form-section-2 li {
     display: block !important; }
-  form li {
+  #form-section-2 li {
     position: relative !important;
     list-style-type: none !important; }
-  form input {
+  #form-section-2 input {
     width: 47% !important;
     height: auto !important;
     padding: 13px !important;
@@ -239,6 +244,9 @@ form {
   font-stretch: condensed !important; }
   #services .container_li {
     margin-left: -30px; }
+  #services .wrapper_services {
+    width: 1319px;
+    margin: 0 auto; }
   #services #box {
     width: 410px;
     text-align: left;
@@ -365,11 +373,82 @@ form {
   #users p {
     margin-bottom: 0 !important; }
 
+/** end 'Users' **/
+/************/
+/** start 'Footer' **/
+.footer {
+  background-color: #2e3640;
+  float: left;
+  width: 100%;
+  padding: 35px  0 10px 0; }
+  .footer .footer_wrapper {
+    width: 90%;
+    margin: 0 auto; }
+  .footer h3 {
+    margin-left: 40px;
+    margin-bottom: 35px !important;
+    font-size: 14px;
+    color: #ffffff; }
+  .footer .menu li {
+    list-style-type: none;
+    margin-bottom: 7px; }
+  .footer .menu a, .footer p {
+    font-weight: 400;
+    text-decoration: none !important;
+    color: #838383 !important; }
+  .footer #custom-text {
+    margin-top: -4px;
+    margin-left: 40px; }
+  .footer #mail-submit {
+    position: relative;
+    right: 35px;
+    float: right; }
+    .footer #mail-submit #mail-sender {
+      height: 33px;
+      width: 60px;
+      position: absolute;
+      right: 15px;
+      background: url("images/mail-icon.png") #249ed9;
+      background-position: 4px -3px;
+      border: 0;
+      border-radius: 20px; }
+    .footer #mail-submit h3 {
+      margin-left: 0;
+      margin-bottom: 55px !important; }
+    .footer #mail-submit input {
+      width: 100%;
+      padding: 6px 0px 7px 20px;
+      border: 0;
+      border-radius: 20px; }
+  .footer .copy_logo {
+    width: 100% !important;
+    margin-top: 9em; }
+  .footer #footer-logo {
+    float: left;
+    margin-left: 35px;
+    margin-right: 20px; }
+    .footer #footer-logo img {
+      max-width: 100%; }
+  .footer #footer-copy {
+    position: relative;
+    top: 18px;
+    float: left;
+    color: #838383; }
+  .footer #social-links {
+    float: right; }
+    .footer #social-links li {
+      margin-right: 5px;
+      display: inline-block; }
+
 @media only screen and (max-width: 530px) {
   #more-moduls {
     margin-left: 44px !important;
     width: 95%; } }
 @media only screen and (max-width: 1330px) {
+  #services .wrapper_services {
+    width: 100% !important;
+    margin: 0 !important; }
+
   #box {
     width: 350px !important; }
 
@@ -405,6 +484,12 @@ form {
 @media only screen and (max-width: 850px) {
   #box {
     width: 200px !important; } }
+@media only screen and (max-width: 775px) {
+  #mail-submit {
+    margin-right: 35px; }
+
+  #copy_logo {
+    width: 70%; } }
 @media only screen and (max-width: 705px) {
   #box {
     width: 410px !important; }
@@ -414,51 +499,71 @@ form {
 
   #more-moduls {
     width: 65% !important;
-    margin-left: 50px !important;
+    margin-left: 27px !important;
     float: none !important; } }
+@media only screen and (max-width: 480px) {
+  .footer #footer-logo img {
+    width: 80%; }
+
+  .footer #footer-copy {
+    float: none !important;
+    font-size: 11px; } }
+@media only screen and (max-width: 475px) {
+  #box {
+    width: 100% !important; } }
 @media only screen and (max-width: 445px) {
   #author {
     display: block !important; }
 
   #about-author {
     top: 0 !important; } }
-@media only screen and (max-width: 475px) {
-  #box {
-    width: 100% !important; } }
+@media only screen and (max-width: 435px) {
+  .footer #footer-copy {
+    float: left !important;
+    margin-left: 40px;
+    margin-top: -20px; } }
 @media only screen and (max-width: 1145px) {
-  form input {
+  #form-section-2 input {
     width: 46% !important; } }
 @media only screen and (max-width: 1095px) {
-  .header_menu {
+  .header .header_menu {
     display: none; }
-
-  #sign-in {
+  .header #sign-in {
     display: none; }
-
-  #button {
+  .header #button {
     display: block !important; }
-
-  .menu li {
+  .header .menu li {
     padding: 0 !important; }
-
-  .menu {
+  .header .menu {
     float: none !important;
     margin-left: -85px; } }
 @media only screen and (min-width: 1095px) {
   .header_menu_responsive {
     display: none !important; } }
-.for_mobile {
-  position: relative;
-  float: right;
-  top: 15px;
-  right: 20px;
-  display: block !important; }
+@media only screen and (max-width: 991px) {
+  .footer .footer_wrapper {
+    width: 100% !important; }
 
+  .col-xs-6 {
+    width: 17% !important; }
+
+  .footer #mail-submit {
+    position: relative;
+    top: 0 !important;
+    left: 40px;
+    float: left;
+    width: 250px !important; } }
 @media only screen and (max-width: 970px) {
-  form input {
+  #form-section-2 input {
     width: 80% !important; } }
+@media only screen and (max-width: 880px) {
+  .col-xs-6 {
+    width: 21% !important; }
+
+  .footer #mail-submit h3 {
+    margin-bottom: 25px !important; } }
 @media only screen and (max-width: 770px) {
-  form input {
+  #form-section-2 input {
     width: 100% !important; }
 
   .user_box {
@@ -467,12 +572,24 @@ form {
 
   #users span {
     font-size: 20px !important; } }
+@media only screen and (max-width: 630px) {
+  .footer .footer_wrapper {
+    width: 88% !important;
+    margin: 0; } }
 @media only screen and (max-width: 620px) {
   #form {
     padding: 58px 0 58px 0 !important; }
 
-  form input {
-    width: 100% !important; } }
+  #form-section-2 input {
+    width: 100% !important; }
+
+  .col-xs-6 {
+    width: 33% !important; }
+
+  #mail-submit {
+    width: 290px;
+    margin-right: 5px;
+    top: 0 !important; } }
 @media only screen and (max-width: 550px) {
   .user_box {
     margin-left: 2px !important; }
@@ -484,13 +601,26 @@ form {
     width: 100% !important; }
 
   #words {
-    width: auto !important; } }
+    width: auto !important; }
+
+  #mail-submit {
+    width: 255px; } }
 @media only screen and (max-width: 445px) {
   .header {
     padding: 24px 40px 24px 40px; }
 
   .logo img {
-    width: 90%; } }
+    width: 90%; }
+
+  .header #button {
+    margin-top: -40px !important; }
+
+  .footer_wrapper {
+    width: 81% !important;
+    margin: 0 !important; } }
+@media only screen and (max-width: 420px) {
+  .col-xs-6 {
+    width: 50% !important; } }
 @media only screen and (max-width: 404px) {
   .header {
     padding: 24px 40px 24px 40px; }
@@ -500,6 +630,9 @@ form {
 
   #button {
     margin-top: -45px !important; } }
+@media only screen and (max-width: 395px) {
+  .col-xs-6 {
+    width: 50%; } }
 @media only screen and (max-width: 365px) {
   .header {
     padding: 24px 30px 24px 30px !important; }
@@ -520,6 +653,9 @@ form {
     padding: 9px 20px 9px 20px !important; } }
 @media only screen and (max-width: 310px) {
   .header {
-    padding: 24px 15px 24px 15px !important; } }
+    padding: 24px 15px 24px 15px !important; }
+
+  .footer #mail-submit {
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */
