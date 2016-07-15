@@ -443,10 +443,6 @@ body {
       margin-right: 7px;
       display: inline-block; }
 
-@media only screen and (max-width: 530px) {
-  #more-moduls {
-    margin-left: 44px !important;
-    width: 95%; } }
 @media only screen and (max-width: 1330px) {
   #services .wrapper_services {
     width: 100% !important;
@@ -484,62 +480,6 @@ body {
 @media only screen and (max-width: 1150px) {
   #box {
     width: 300px !important; } }
-@media only screen and (max-width: 1000px) {
-  #box {
-    width: 250px !important; }
-
-  #services #service-smart-object {
-    top: 13%; } }
-@media only screen and (max-width: 850px) {
-  #box {
-    width: 200px !important; }
-
-  #services #description {
-    height: 170px; }
-
-  #services #service-smart-object {
-    top: 10%; } }
-@media only screen and (max-width: 775px) {
-  #mail-submit {
-    margin-right: 35px; }
-
-  #copy_logo {
-    width: 70%; } }
-@media only screen and (max-width: 705px) {
-  #box {
-    width: 410px !important; }
-
-  #description {
-    height: auto !important; }
-
-  #more-moduls {
-    width: 65% !important;
-    margin-left: 27px !important;
-    float: none !important; }
-
-  #services #service-smart-object {
-    top: 23%; } }
-@media only screen and (max-width: 480px) {
-  .footer #footer-logo img {
-    width: 80%; }
-
-  .footer #footer-copy {
-    float: none !important;
-    font-size: 11px; } }
-@media only screen and (max-width: 475px) {
-  #box {
-    width: 100% !important; } }
-@media only screen and (max-width: 445px) {
-  #author {
-    display: block !important; }
-
-  #about-author {
-    top: 0 !important; } }
-@media only screen and (max-width: 435px) {
-  .footer #footer-copy {
-    float: left !important;
-    margin-left: 40px;
-    margin-top: -20px; } }
 @media only screen and (max-width: 1145px) {
   #form-section-2 input {
     width: 46% !important; } }
@@ -558,6 +498,12 @@ body {
 @media only screen and (min-width: 1095px) {
   .header_menu_responsive {
     display: none !important; } }
+@media only screen and (max-width: 1000px) {
+  #box {
+    width: 250px !important; }
+
+  #services #service-smart-object {
+    top: 13%; } }
 @media only screen and (max-width: 991px) {
   .footer .footer_wrapper {
     width: 100% !important; }
@@ -580,6 +526,21 @@ body {
 
   .footer #mail-submit h3 {
     margin-bottom: 25px !important; } }
+@media only screen and (max-width: 850px) {
+  #box {
+    width: 200px !important; }
+
+  #services #description {
+    height: 170px; }
+
+  #services #service-smart-object {
+    top: 10%; } }
+@media only screen and (max-width: 775px) {
+  #mail-submit {
+    margin-right: 35px; }
+
+  #copy_logo {
+    width: 70%; } }
 @media only screen and (max-width: 770px) {
   #form-section-2 input {
     width: 100% !important; }
@@ -590,6 +551,20 @@ body {
 
   #users span {
     font-size: 20px !important; } }
+@media only screen and (max-width: 705px) {
+  #box {
+    width: 410px !important; }
+
+  #description {
+    height: auto !important; }
+
+  #more-moduls {
+    width: 65% !important;
+    margin-left: 27px !important;
+    float: none !important; }
+
+  #services #service-smart-object {
+    top: 23%; } }
 @media only screen and (max-width: 630px) {
   .footer .footer_wrapper {
     width: 88% !important;
@@ -621,6 +596,20 @@ body {
 @media only screen and (max-width: 545px) {
   #smart-object {
     top: 85px; } }
+@media only screen and (max-width: 530px) {
+  #more-moduls {
+    margin-left: 44px !important;
+    width: 95%; } }
+@media only screen and (max-width: 480px) {
+  .footer #footer-logo img {
+    width: 80%; }
+
+  .footer #footer-copy {
+    float: none !important;
+    font-size: 11px; } }
+@media only screen and (max-width: 475px) {
+  #box {
+    width: 100% !important; } }
 @media only screen and (max-width: 470px) {
   #title {
     width: 100% !important; }
@@ -700,5 +689,16 @@ body {
 
   .footer #mail-submit {
     width: 90%; } }
+@media only screen and (max-width: 445px) {
+  #author {
+    display: block !important; }
+
+  #about-author {
+    top: 0 !important; } }
+@media only screen and (max-width: 435px) {
+  .footer #footer-copy {
+    float: left !important;
+    margin-left: 40px;
+    margin-top: -20px; } }
 
 /*# sourceMappingURL=style.css.map */
