@@ -281,6 +281,8 @@ body {
   #services #service-smart-object:hover {
     opacity: 0.6; }
   #services #more-moduls {
+    font-size: 27px !important;
+    font-weight: 300 !important;
     float: right;
     padding: 15px !important;
     margin-right: 30px;
@@ -435,9 +437,10 @@ body {
     float: left;
     color: #838383; }
   .footer #social-links {
-    float: right; }
+    float: right;
+    margin-top: -15px; }
     .footer #social-links li {
-      margin-right: 5px;
+      margin-right: 7px;
       display: inline-block; }
 
 @media only screen and (max-width: 530px) {
@@ -474,16 +477,28 @@ body {
     width: 100% !important; }
 
   #users li {
-    margin-right: 0 !important; } }
+    margin-right: 0 !important; }
+
+  #services #service-smart-object {
+    top: 20%; } }
 @media only screen and (max-width: 1150px) {
   #box {
     width: 300px !important; } }
 @media only screen and (max-width: 1000px) {
   #box {
-    width: 250px !important; } }
+    width: 250px !important; }
+
+  #services #service-smart-object {
+    top: 13%; } }
 @media only screen and (max-width: 850px) {
   #box {
-    width: 200px !important; } }
+    width: 200px !important; }
+
+  #services #description {
+    height: 170px; }
+
+  #services #service-smart-object {
+    top: 10%; } }
 @media only screen and (max-width: 775px) {
   #mail-submit {
     margin-right: 35px; }
@@ -500,7 +515,10 @@ body {
   #more-moduls {
     width: 65% !important;
     margin-left: 27px !important;
-    float: none !important; } }
+    float: none !important; }
+
+  #services #service-smart-object {
+    top: 23%; } }
 @media only screen and (max-width: 480px) {
   .footer #footer-logo img {
     width: 80%; }
@@ -575,7 +593,11 @@ body {
 @media only screen and (max-width: 630px) {
   .footer .footer_wrapper {
     width: 88% !important;
-    margin: 0; } }
+    margin: 0; }
+
+  .footer #social-links {
+    float: none !important;
+    margin-top: -7em; } }
 @media only screen and (max-width: 620px) {
   #form {
     padding: 58px 0 58px 0 !important; }
@@ -596,6 +618,9 @@ body {
 
   #words {
     font-size: 14px; } }
+@media only screen and (max-width: 545px) {
+  #smart-object {
+    top: 85px; } }
 @media only screen and (max-width: 470px) {
   #title {
     width: 100% !important; }
@@ -605,6 +630,9 @@ body {
 
   #mail-submit {
     width: 255px; } }
+@media only screen and (max-width: 455px) {
+  #smart-object {
+    top: 70px; } }
 @media only screen and (max-width: 445px) {
   .header {
     padding: 24px 40px 24px 40px; }
@@ -618,6 +646,12 @@ body {
   .footer_wrapper {
     width: 81% !important;
     margin: 0 !important; } }
+@media only screen and (max-width: 440px) {
+  .footer .copy_logo {
+    margin-bottom: 25px; }
+
+  .footer #footer-logo {
+    margin-bottom: 5px; } }
 @media only screen and (max-width: 420px) {
   .col-xs-6 {
     width: 50% !important; } }
@@ -632,7 +666,13 @@ body {
     margin-top: -45px !important; } }
 @media only screen and (max-width: 395px) {
   .col-xs-6 {
-    width: 50%; } }
+    width: 50%; }
+
+  #services #service-smart-object {
+    top: 19%; } }
+@media only screen and (max-width: 370px) {
+  #smart-object {
+    top: 60px; } }
 @media only screen and (max-width: 365px) {
   .header {
     padding: 24px 30px 24px 30px !important; }
@@ -654,6 +694,9 @@ body {
 @media only screen and (max-width: 310px) {
   .header {
     padding: 24px 15px 24px 15px !important; }
+
+  #services #service-smart-object {
+    top: 11%; }
 
   .footer #mail-submit {
     width: 90%; } }

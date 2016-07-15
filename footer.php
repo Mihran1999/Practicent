@@ -48,13 +48,15 @@
 				<div id="footer-copy">
 					&copy; 2016 All rights reserved
 				</div>
-				<div id="social-links">
+
+			<div id="social-links">
 					<ul>
-						<li><a href="" id="facebook"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.png"></a></li>
+						<li><a href="" id="google"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/facebook.png"></a></li>
 						<li><a href="" id="youtube"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/youtube.png"></a></li>
-						<li><a href="" id="google"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/google.png"></a></li>
+						<li><a href="" id="google"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/g+.png"></a></li>
 					</ul>
 				</div>
+				
 			</div>
 	</div>	
 </footer> 

@@ -169,7 +169,7 @@
 
 	            <?php endif; ?>
 	            <div class="button_container">
-	    			<button id="more-moduls" class="btn btn-primary">More moduls</button>
+	    			<button id="more-moduls" class="btn btn-primary">More moduls <span id="arrow-right"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/arrow-right.png"></span></button>
 	    		</div>
 	    	</ul>        
 
