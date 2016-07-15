@@ -192,7 +192,7 @@ body {
     margin-left: 60px; }
 
 #form-section-2 {
-  margin-right: 40px; }
+  margin-right: 65px; }
   #form-section-2 ul, #form-section-2 li {
     display: block; }
   #form-section-2 li {
@@ -665,13 +665,16 @@ body {
     top: 19%; } }
 @media only screen and (max-width: 370px) {
   #smart-object {
-    top: 60px; } }
+    top: 73px; } }
 @media only screen and (max-width: 365px) {
   #page_start .header {
     padding: 24px 30px 24px 30px; }
 
   .mobile_menu #button {
     margin-top: -45px; }
+
+  #smart-object {
+    top: 60px; }
 
   .btn {
     padding: 12px 36px 12px 35px !important; }
