@@ -106,7 +106,7 @@ body {
   float: right;
   top: 15px;
   right: 20px;
-  display: block; }
+  display: block !important; }
 
 #line {
   height: 3px;
