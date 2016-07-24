@@ -162,6 +162,7 @@ function tutsplus_widgets_init() {
     ) );
          
 }
+
 // Register
 add_action( 'widgets_init', 'tutsplus_widgets_init' );
 

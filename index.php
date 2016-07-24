@@ -1,13 +1,10 @@
 <?php get_header(); ?>
 
 <body>
-
 	<div class="controller">
 
 	    <section id="page_start" class="col-md-12">
-
 		    <header class="header">	
-
 		    	<div class="logo">
 		    		<a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_bloginfo('template_directory');?> /images/logo.png"></a>
 		    	</div>
@@ -35,7 +32,6 @@
 				<a href="" id="sign-in">Sign in</a>	
 
 	        </header>
-
 	        <div class="header_content">  
 			    <?php $start = new WP_Query(array('post_type' => 'start'));  ?>    
 	                   
@@ -58,62 +54,48 @@
 
 	                    <?php endif; ?> 
 	        </div>            
-
 	        <div id="img-center" class="fadeIn">
-
 	        	<span id="smart-object">
 	        		<img src="<?php echo get_bloginfo('template_directory'); ?> /images/smart-object.png">
 	        	</span>
 	        	<img src="<?php echo get_bloginfo('template_directory'); ?> /images/laptop.png">
-
 	        </div>	
-
 	        <div id="clear"></div>
-
 		</section>    
 
 		<section id="form" class="col-md-12">
-				
 				<?php $form = new WP_Query(array('post_type' => 'form'));  ?>    
 	                   
 	                <?php if($form->have_posts() ) : ?> 
 
 	                <?php while ($form->have_posts() ) : $form->the_post(); ?>
 	                        
-	                    <!-- Start Post -->
 
 	                        <span><?php the_title(); ?></span>
-
-	                    <!-- End Post -->   
+ 
 
 	                <?php endwhile; ?>
 
 	                <?php else: ?>
 
 	                <?php endif; ?>
-
 	                <form id="form-section-2">
 	                	<ul>
-
 	                		<li>
 	                			<input type="text" id="first-name" placeholder="First name*"></input>
 	                			<input type="text" id="phone-number" placeholder="Phone number*"></input>
-	                		</li>
-	                			
+	                		</li>	                			
 	                		<li>
 	                			<input type="text" id="email" placeholder="Email*"></input>
 	                			<input type="text" id="password" placeholder="Password*"></input>
-	                		</li>
-	                			
+	                		</li>	                			
 	                	</ul>	
 	                	<button id="start-trial" class="btn btn-primary">Start Trial</button>
 	                	<?php the_content(); ?>
 	                </form>
-
 		</section>
 
 		<section id="lorem" class="col-md-12">
-
 			<?php $lorem = new WP_Query(array('post_type' => 'lorem'));  ?>    
 	                   
 	                <?php if($lorem->have_posts() ) : ?> 
@@ -132,52 +114,49 @@
 	                <?php else: ?>
 
 	                <?php endif; ?>
-
 		</section>
 
 		<section id="services" class="col-md-12">
-		<div class="wrapper_services">
-			<ul class="container_li">
-				<?php $services = new WP_Query(array('post_type' => 'services'));  ?>    
+			<div class="wrapper_services">
+				<ul class="container_li">
+					<?php $services = new WP_Query(array('post_type' => 'services'));  ?>    
 	       	            
-	            	<?php if($services->have_posts() ) : ?> 
+	            		<?php if($services->have_posts() ) : ?> 
 
-	            	<?php while ($services->have_posts() ) : $services->the_post(); ?>
+	            		<?php while ($services->have_posts() ) : $services->the_post(); ?>
 	                        
 	                
 
-	                    <li>
-	                    	<div class="service_box" id="box">
-	                    		<div id="service-smart-object">
-									<img src="<?php echo get_bloginfo('template_directory'); ?> /images/smart-object.png">
-								</div>
-	                    		<?php the_post_thumbnail(); ?>
-	                    		<div id="description">
-	                    			<span>
-	                    				<?php the_title(); ?>
-	                    			</span>
-	                    			<?php the_content(); ?>
-	                    		</div>	
-	                    	</div>
-	                    </li>
+	             	       <li>
+	               		     	<div class="service_box" id="box">
+	                    			<div id="service-smart-object">
+										<img src="<?php echo get_bloginfo('template_directory'); ?> /images/smart-object.png">
+									</div>
+	                    			<?php the_post_thumbnail(); ?>
+	                    			<div id="description">
+	                    				<span>
+	                    					<?php the_title(); ?>
+	                    				</span>
+	                    				<?php the_content(); ?>
+	                    			</div>	
+	                    		</div>
+	                    	</li>
 
 	                  
 
-	            <?php endwhile; ?>
+	           		<?php endwhile; ?>
 
-	            <?php else: ?>
+	           		 <?php else: ?>
 
-	            <?php endif; ?>
-	            <div class="button_container">
-	    			<button id="more-moduls" class="btn btn-primary">More moduls <span id="arrow-right"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/arrow-right.png"></span></button>
-	    		</div>
-	    	</ul>        
-
-	    </div>
+	           		 <?php endif; ?>
+	           		 <div class="button_container">
+	    				<button id="more-moduls" class="btn btn-primary">More moduls <span id="arrow-right"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/arrow-right.png"></span></button>
+	    			</div>
+	    		</ul>        
+	    	</div>
 		</section>
 
 		<section id="sponsors" class="col-md-12">
-
 			<div class="sponsor_company">
 				<span>Join our clients</span>
 				<ul>
@@ -196,7 +175,6 @@
 	            		<?php endif; ?>
 	            </ul>		
 	        </div>    		
-
 		</section>
 
 		<section id="users" class="col-md-12">
@@ -236,5 +214,4 @@
 		<?php get_footer(); ?> 
 
 	</div>
-
 </body>

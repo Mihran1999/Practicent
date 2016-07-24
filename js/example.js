@@ -1,3 +1,5 @@
+//Responsive menu button click animation
+
  $(document).ready(function() {
         $('#button').click(function() {
             $('.header_menu_responsive').slideToggle("normal");

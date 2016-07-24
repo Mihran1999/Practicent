@@ -441,11 +441,15 @@ body {
     color: #838383; }
   .footer #social-links {
     float: right;
-    margin-top: -15px; }
+    margin-top: -15px;
+    margin-right: 20px; }
     .footer #social-links li {
       margin-right: 7px;
       display: inline-block; }
 
+/** end 'Footer' **/
+/************/
+/** start '@media queries' **/
 @media only screen and (max-width: 1330px) {
   #services .wrapper_services {
     width: 100%;
@@ -527,6 +531,9 @@ body {
   .footer #mail-submit h3 {
     margin-bottom: 25px; } }
 @media only screen and (max-width: 850px) {
+  #smart-object {
+    top: 140px; }
+
   #services #box {
     width: 200px; }
 
@@ -548,6 +555,9 @@ body {
   #users span {
     font-size: 20px; } }
 @media only screen and (max-width: 705px) {
+  #smart-object {
+    top: 105px; }
+
   #form span {
     margin-right: 10px; }
 
@@ -619,7 +629,7 @@ body {
     width: 255px; } }
 @media only screen and (max-width: 455px) {
   #smart-object {
-    top: 70px; } }
+    top: 75px; } }
 @media only screen and (max-width: 445px) {
   #page_start .header {
     padding: 24px 30px 24px 30px; }
@@ -662,6 +672,9 @@ body {
     width: 50%; }
 
   #services #service-smart-object {
+    top: 16%; } }
+@media only screen and (max-width: 375px) {
+  #services #service-smart-object {
     top: 19%; } }
 @media only screen and (max-width: 370px) {
   #smart-object {
@@ -697,17 +710,15 @@ body {
 @media only screen and (max-width: 325px) {
   .btn {
     padding: 9px 20px 9px 20px !important; } }
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 320px) {
   #page_start .header {
     padding: 24px 15px 24px 15px; }
 
   #services #service-smart-object {
-    top: 11%; }
-
-  .footer #social-links {
-    margin-left: 5%; }
+    top: 15%; }
 
   .footer #mail-submit {
     width: 90%; } }
+/** end '@media queries' **/
 
 /*# sourceMappingURL=style.css.map */
