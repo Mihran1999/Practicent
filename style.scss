@@ -41,10 +41,14 @@ body {
 	.menu {
 		a {
 			color: #fff;
+			-webkit-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    		-moz-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    		-o-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    		transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
 		}
 		a:hover {
 			text-decoration: none;
-			color: #fff;
+			color: #249ed9;
 		}
 	}
 	.menu  {
@@ -625,7 +629,7 @@ body {
 }
 @media only screen and (min-width: 1095px) {
 	.header_menu_responsive {
-		display: none;
+		display: none !important;
 	}
 }
 @media only screen and (max-width: 1000px) {
@@ -700,6 +704,9 @@ body {
 	}
 }
 @media only screen and (max-width: 705px) {
+	#page_start .header {
+		padding: 24px 20px 24px 20px;
+	}
 	#smart-object {
 		top: 105px;
 	}
