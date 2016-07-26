@@ -45,6 +45,8 @@ body {
       float: right;
       background-color: #249ed9;
       color: #fff;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
       border-radius: 20px; }
     #page_start .header #sign-in:hover {
       text-decoration: none; }
@@ -205,6 +207,8 @@ body {
     margin: 0 12px 30px 12px;
     font-size: 16px;
     border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px; }
 
 .btn {
@@ -289,6 +293,8 @@ body {
     float: right;
     padding: 15px !important;
     margin-right: 30px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
     border-radius: 0; }
 
 /** end 'Services' **/
@@ -346,6 +352,8 @@ body {
     width: 400px;
     background-color: #ffffff;
     padding: 22px 35px 22px 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     font-weight: 300; }
   #users #arrow-bottom {
@@ -416,6 +424,8 @@ body {
       background: url("images/mail-icon.png") #249ed9;
       background-position: 4px -3px;
       border: 0;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
       border-radius: 20px; }
     .footer #mail-submit h3 {
       margin-left: 0;
@@ -424,6 +434,8 @@ body {
       width: 100%;
       padding: 6px 0px 7px 20px;
       border: 0;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
       border-radius: 20px; }
   .footer .copy_logo {
     width: 100%;
