@@ -54,7 +54,7 @@
 
 	                    <?php endif; ?> 
 	        </div>            
-	        <div id="img-center" class="fadeIn">
+	        <div id="img-center">
 	        	<span id="smart-object">
 	        		<img src="<?php echo get_bloginfo('template_directory'); ?> /images/smart-object.png">
 	        	</span>
