@@ -1,3 +1,4 @@
+
 //Responsive menu button click animation
 
  $(document).ready(function() {
@@ -11,3 +12,12 @@
         });
     });
 
+//Video player
+
+$(document).ready(function() {
+	$('.service-smart-object').click(function() {
+		$(this).fadeOut(100);
+		$(this).next().children('div.img-box').css({'z-index': '5', 'opacity': '0', 'visibility': 'hidden'});
+		$(this).next().children('div.video-box').css({'z-index': '6', 'opacity': '1', 'visibility': 'visible'})
+	})
+}) 
