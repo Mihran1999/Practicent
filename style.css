@@ -1,6 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext,greek-ext,greek,vietnamese,cyrillic,cyrillic-ext);
+.cont {
+  text-align: center;
+  background: url(images/laptop.png) no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 392px;
+  width: 680px;
+  margin: 0 auto; }
+
+.video-container {
+  position: relative;
+  top: 35px;
+  padding-bottom: 40.5%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  right: 0;
+  width: 72%;
+  height: 100%;
+  margin: 0 auto; }
+
 * {
   outline: none; }
 
@@ -57,7 +85,8 @@ body {
 
 .header_content {
   text-align: center;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  padding: 0 10px 0 10px; }
   .header_content span {
     color: #fff;
     font-family: Roboto;
@@ -74,7 +103,7 @@ body {
 #img-center {
   text-align: center;
   position: relative;
-  top: 3em;
+  top: 2.15em;
   z-index: 9;
   overflow: hidden; }
   #img-center img {
@@ -179,7 +208,7 @@ body {
 /************/
 /** start 'Form' **/
 #form {
-  background-color: #ccffff;
+  background-color: #99ccff;
   padding: 58px 85px 58px 85px;
   text-align: center;
   float: left;
@@ -228,7 +257,7 @@ body {
 /** start 'Lorem' **/
 #lorem {
   background-color: #ffffff;
-  padding: 58px 0 58px 0;
+  padding: 58px 35px 58px 35px;
   text-align: center;
   float: left;
   width: 100%;
@@ -571,6 +600,11 @@ body {
   #users span {
     font-size: 20px; } }
 @media only screen and (max-width: 705px) {
+  .cont {
+    width: auto;
+    height: inherit;
+    padding-bottom: 13%; }
+
   #page_start .header {
     padding: 24px 20px 24px 20px; }
 
@@ -592,6 +626,9 @@ body {
 
   #services #service-smart-object {
     top: 23%; } }
+@media only screen and (max-width: 670px) {
+  .video-container {
+    top: 32px; } }
 @media only screen and (max-width: 630px) {
   .footer .footer_wrapper {
     width: 88%;
@@ -601,6 +638,9 @@ body {
     float: none;
     margin-top: -7em; } }
 @media only screen and (max-width: 620px) {
+  .video-container {
+    top: 27px; }
+
   #form {
     padding: 58px 0 58px 0; }
 
@@ -627,7 +667,13 @@ body {
   #services #more-moduls {
     margin-left: 44px !important;
     width: 95%; } }
+@media only screen and (max-width: 515px) {
+  .video-container {
+    top: 17px; } }
 @media only screen and (max-width: 480px) {
+  .video-container {
+    top: 17px; }
+
   .footer #footer-logo img {
     width: 80%; }
 
@@ -650,6 +696,9 @@ body {
   #smart-object {
     top: 75px; } }
 @media only screen and (max-width: 445px) {
+  .video-container {
+    top: 11px; }
+
   #page_start .header {
     padding: 24px 30px 24px 30px; }
 
@@ -663,8 +712,10 @@ body {
     top: 0; }
 
   .footer .footer_wrapper {
-    width: 95%;
-    margin: 0; } }
+    width: 100%;
+    margin: 0;
+    position: relative;
+    right: 30px; } }
 @media only screen and (max-width: 440px) {
   .footer .copy_logo {
     margin-bottom: 25px; }
@@ -672,9 +723,12 @@ body {
   .footer #footer-logo {
     margin-bottom: 5px; } }
 @media only screen and (max-width: 435px) {
+  .footer #footer-logo {
+    margin-left: 45px; }
+
   .footer #footer-copy {
     float: left;
-    margin-left: 40px; } }
+    margin-left: 50px; } }
 @media only screen and (max-width: 420px) {
   .col-xs-6 {
     width: 50%; }
@@ -693,6 +747,9 @@ body {
   #services #service-smart-object {
     top: 16%; } }
 @media only screen and (max-width: 375px) {
+  .video-container iframe {
+    height: 96%; }
+
   #services #service-smart-object {
     top: 19%; } }
 @media only screen and (max-width: 370px) {
@@ -714,15 +771,8 @@ body {
   #form p {
     display: none; }
 
-  .footer #footer-logo {
-    margin-left: 75px;
-    margin-right: 0; }
-
-  .footer #footer-copy {
-    margin-left: 78px; }
-
   .footer #social-links {
-    margin-left: 10%; } }
+    margin-left: 2%; } }
 @media only screen and (max-width: 340px) {
   .btn {
     padding: 12px 36px 12px 35px !important; } }
