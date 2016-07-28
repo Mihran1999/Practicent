@@ -323,11 +323,10 @@ body {
     overflow: hidden;
     z-index: 5;
     opacity: 0;
-    visibility: hidden;
-    -webkit-transition: 0.5s cubic-bezier(0.21, 0.02, 0.1, 0.8);
-    -moz-transition: 0.5s cubic-bezier(0.21, 0.02, 0.1, 0.8);
-    -o-transition: 0.5s cubic-bezier(0.21, 0.02, 0.1, 0.8);
-    transition: 0.5s cubic-bezier(0.21, 0.02, 0.1, 0.8); }
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear; }
     #services .video-box iframe {
       position: absolute;
       width: 100%;
@@ -336,11 +335,10 @@ body {
     position: relative;
     z-index: 6;
     opacity: 1;
-    visibility: visible;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.7s linear;
+    -moz-transition: 0.7s linear;
+    -o-transition: 0.7s linear;
+    transition: 0.7s linear; }
   #services #more-moduls {
     font-size: 27px !important;
     font-weight: 300 !important;
