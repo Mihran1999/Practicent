@@ -7,10 +7,12 @@
 
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
-      var player;
+      var player = [], i;
+      var ytIDs = [{elemId: 'player', videoId: 'M7lc1UVf-VE', buttonId: 'play-button'},{elemId: 'player1', videoId: 'ZJ4aVllpRH8', buttonId: 'play-button1'},{elemId: 'player2', videoId: 'qN2ODFAgSOk', buttonId: 'play-button2'},{elemId: 'player3', videoId: 'Uh7RVuqVAds', buttonId: 'play-button3'},{elemId: 'player4', videoId: '2hbgtQaBWIg', buttonId: 'play-button4'},{elemId: 'player5', videoId: 'scUJbiEmiuc', buttonId: 'play-button5'}];
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          videoId: 'M7lc1UVf-VE',
+        for (i = 0; i < ytIDs.length; i++) {
+          player[i] = new YT.Player(ytIDs[i].elemId, {
+          videoId: ytIDs[i].videoId,
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -20,72 +22,10 @@
             disablekb: 1,
             showinfo: 0
           }
-        });
+        });          
+        }
 
-        player1 = new YT.Player('player1', {
-          videoId: 'ZJ4aVllpRH8',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          },
-          playerVars: {
-            controls: 0,
-            disablekb: 1,
-            showinfo: 0
-          }
-        });
-
-        player2 = new YT.Player('player2', {
-          videoId: 'qN2ODFAgSOk',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          },
-          playerVars: {
-            controls: 0,
-            disablekb: 1,
-            showinfo: 0
-          }
-        });
-
-        player3 = new YT.Player('player3', {
-          videoId: 'Uh7RVuqVAds',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          },
-          playerVars: {
-            controls: 0,
-            disablekb: 1,
-            showinfo: 0
-          }
-        });
-
-        player4 = new YT.Player('player4', {
-          videoId: '2hbgtQaBWIg',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          },
-          playerVars: {
-            controls: 0,
-            disablekb: 1,
-            showinfo: 0
-          }
-        });
-
-        player5 = new YT.Player('player5', {
-          videoId: 'scUJbiEmiuc',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange,
-          },
-          playerVars: {
-            controls: 0,
-            disablekb: 1,
-            showinfo: 0
-          }
-        });
+        console.log(player);
       }
 
       // 4. The API will call this function when the video player is ready.
@@ -99,40 +39,21 @@
       var done = false;
       function onPlayerStateChange(event) {}
       function stopVideo() {
-        player.stopVideo();
-        player1.stopVideo();
-        player2.stopVideo();
-        player3.stopVideo();
-        player4.stopVideo();
-        player5.stopVideo();
+        for (i = 0; i < player.length; i++) {
+          player[i].stopVideo();
+        }  
       }
 
 
       function onPlayerReady(event) {
-  
-          // bind events
-          var playButton = document.getElementById("play-button");
-            playButton.addEventListener("click", function() {
-            player.playVideo();
-          });
-          var playButton = document.getElementById("play-button1");
-           playButton.addEventListener("click", function() {
-           player1.playVideo();
-          });
-          var playButton = document.getElementById("play-button2");
-           playButton.addEventListener("click", function() {
-           player2.playVideo();
-          });
-          var playButton = document.getElementById("play-button3");
-           playButton.addEventListener("click", function() {
-           player3.playVideo();
-          }); 
-          var playButton = document.getElementById("play-button4");
-           playButton.addEventListener("click", function() {
-           player4.playVideo();
-          }); 
-          var playButton = document.getElementById("play-button5");
-           playButton.addEventListener("click", function() {
-           player5.playVideo();
-          }); 
+        
+        for (i = 0; i < ytIDs.length; i++) {
+          var playButton = document.getElementById(ytIDs[i].buttonId);
+            (function(i){
+              playButton.addEventListener("click", function() {
+                player[i].playVideo();
+              });   
+            })(i);
+            
+        }
 }
