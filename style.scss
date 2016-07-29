@@ -111,7 +111,7 @@ body {
 	iframe,object,embed {
     	position: absolute;
     	top: 0;
-    	left: -3px;
+    	left: -4px;
     	right: 0;
     	width: 72%;
     	height: 100%;
@@ -356,6 +356,9 @@ body {
 	.service-smart-object {
 		position: absolute;
 		text-align: center;
+		height: 90px;
+		width: 90px;
+		margin: 0 auto;
 		top: 23%;
 		left: 0;
 		right: 0;
