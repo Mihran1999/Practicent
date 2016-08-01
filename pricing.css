@@ -1,0 +1,29 @@
+#pricing_page {
+  background-color: #e7f5fd;
+  padding: 50px 15px 20px 15px;
+  text-align: center;
+  float: left;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 200;
+  font-stretch: condensed; }
+  #pricing_page .start_trial_box {
+    background-color: #ffffff;
+    width: 33%;
+    margin: 0 auto;
+    padding: 20px; }
+  #pricing_page #pricing-icon-box {
+    margin-top: 50px; }
+  #pricing_page .pricing_icon {
+    display: inline-block; }
+  #pricing_page span {
+    font-weight: 400; }
+  #pricing_page p {
+    color: #616161;
+    font-weight: 300; }
+  #pricing_page small {
+    font-weight: 300;
+    font-size: 17px; }
+
+/*# sourceMappingURL=pricing.css.map */

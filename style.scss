@@ -1,10 +1,12 @@
 
+@import 'pricing';
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext,greek-ext,greek,vietnamese,cyrillic,cyrillic-ext);
 
 * {
-	outline: none;
+	outline: none !important;
 }
 body {
 	margin: 0;
@@ -23,28 +25,58 @@ body {
 	padding: 0;
 	.header {
 	position: relative;
-	height: 95px;
-	padding: 24px 62px 24px 62px;
-	margin-bottom: 130px;
+	height: 100px;
+	width: 100%;
+	padding: 24px 62px 0 62px;
 	z-index: 5;
 	font-family: Roboto;
 	font-size: 17px;
 	font-weight: normal;
 	font-stretch: condensed;
+	-webkit-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    -moz-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    -o-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
 	.logo {
+		position: absolute;
+		visibility: visible;
 		float: left;
-		margin-right: 100px;
+		z-index: 10;
+	}
+	.logo_scroll {
+		visibility: hidden;
+		float: left;
+		z-index: 8;
 	}
 	.menu {
-		float: left;
+		text-align: center;
+		padding: 0;
 	} 
 	.menu {
 		a {
+			position: relative;
 			color: #fff;
 			-webkit-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
     		-moz-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
     		-o-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
     		transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+		}
+		a:after {
+			display: block;
+  			position: absolute;
+  			left: 0;
+  			bottom: -37px;
+  			width: 0;
+  			height: 3px;
+  			background-color: #249ed9;
+  			content: "";
+  			-webkit-transition: width 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    		-moz-transition: width 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    		-o-transition: width 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    		transition: width 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+		}
+		a:hover:after {
+			width: 100%;
 		}
 		a:hover {
 			text-decoration: none;
@@ -54,27 +86,33 @@ body {
 	.menu  {
 		li {
 			display: inline-block;
-			margin-left: 45px;
+			margin-right: 45px;
 		}
 	}
 	#sign-in {
-		padding: 7px 42px 7px 42px;
-		float: right;
 		background-color: #249ed9;
+		padding: 7px 42px 7px 42px;
+		margin-top: 8px;
+		float: right;
 		color: #fff;
 		-webkit-border-radius: 20px;
 		-moz-border-radius: 20px;
 		border-radius: 20px;
 	}
-	#sign-in:hover {
-		text-decoration: none;
-	}
+		#sign-in:hover {
+			text-decoration: none;
+		}
 	}
 }
 .header_content {
 	text-align: center;
+	margin-top: 130px; 
 	margin-bottom: 90px;
 	padding: 0 10px 0 10px;
+	-webkit-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    -moz-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    -o-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
 	span {
 		color: #fff;
 		font-family: Roboto;
@@ -149,6 +187,31 @@ body {
 }
 
 /** hamburger **/
+
+/** custom classes **/
+.scroll_animate {
+	position: fixed !important;
+	background-color: #ffffff !important;
+	height: 100px !important;
+	z-index: 999 !important;
+	border-bottom: 2px solid #cdcdcd !important;
+}	
+.scroll_animate_a {
+	color: #000000 !important;
+}
+.scroll_animate_rspmenu {
+	background-color: #ffffff !important; 
+}
+.scroll_animate_fadeout {
+	visibility: hidden !important;
+	z-index: 8 !important;
+}
+.scroll_animate_fadein {
+	visibility: visible !important;
+	z-index: 10 !important;
+}
+/****/
+
 .mobile_menu {
 	cursor: pointer;
 	#button {
@@ -161,7 +224,7 @@ body {
 .for_mobile {
 	position: relative;
 	float: right;
-    top: 15px;
+    top: 8px;
     right: 20px;
     display: block !important;
 }
@@ -193,12 +256,16 @@ body {
 .rotate_first {
 	opacity: 0;
 }
+.rotate_second {
+	transform: rotate(45deg);
+	top: -6px;
+}
 .rotate_third {
 	opacity: 0;
 }
 .invisible_line_rotate {
 	opacity: 1;
-	transform: rotate(90deg);
+	transform: rotate(135deg);
 }
 .header_menu_responsive {
 	background-color: rgb(56, 65, 76);
@@ -619,7 +686,11 @@ body {
 /************/
 
 /** start '@media queries' **/
-
+@media only screen and (max-width: 1382px) { 
+	#page_start .header .logo {
+		margin-right: 10%; 
+	}
+}
 @media only screen and (max-width: 1330px) {
 	#services .wrapper_services {
 		width: 100%;
@@ -652,25 +723,14 @@ body {
 		top: 20%;
 	}
 }
-@media only screen and (max-width: 1150px) {
-	#services #box {
-		width: 300px;
-	}
-	#services .video-box iframe {
-		height: 60.2%;
-	}
-}
-@media only screen and (max-width: 1145px) {
-	#form-section-2 {
-		input {
-			width: 46%;
-		}
-	}
-}
-@media only screen and (max-width: 1095px) {
+@media only screen and (max-width: 1235px) {
 	.header {
 		.header_menu {
 			display: none;
+		}
+		.menu a:after {
+			content: '';
+			display: none !important;			
 		}
 		#sign-in {
 			display: none;
@@ -684,15 +744,31 @@ body {
 	}	
 	#page_start .header .menu li {
 			padding: 0;
+			margin-right: 0; 
 		}
 	#page_start .header .menu {
 			float: none;
-			margin-left: -85px;
+			text-align: left;
 		}
 }
-@media only screen and (min-width: 1095px) {
+@media only screen and (min-width: 1235px) {
 	.header_menu_responsive {
 		display: none !important;
+	}
+}
+@media only screen and (max-width: 1150px) {
+	#services #box {
+		width: 300px;
+	}
+	#services .video-box iframe {
+		height: 60.2%;
+	}
+}
+@media only screen and (max-width: 1145px) {
+	#form-section-2 {
+		input {
+			width: 46%;
+		}
 	}
 }
 @media only screen and (max-width: 1000px) {
@@ -909,10 +985,11 @@ body {
 	#page_start .header {
 		padding: 24px 30px 24px 30px;
 	}
-	.logo {
-		img {
-			width: 90%;
-		}
+	#page_start .header .logo img {
+		width: 90%;
+	}
+	#page_start .header .logo_scroll {
+		margin-right: 10%;
 	}
 	#users #author {
 		display: block;
@@ -1002,9 +1079,6 @@ body {
 @media only screen and (max-width: 365px) {
 	#page_start .header {
 		padding: 24px 30px 24px 30px;
-	}
-	.mobile_menu #button {
-		margin-top: -45px;
 	}
 	#smart-object {
 		top: 60px;
