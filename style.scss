@@ -343,7 +343,7 @@ body {
 			border-radius: 5px;
 		}
 	}
-.btn {
+#start-trial {
 	padding: 17px 65px 17px 65px !important;
 	margin-left: 60px !important;
 	font-weight: 200 !important;
@@ -692,6 +692,9 @@ body {
 	}
 }
 @media only screen and (max-width: 1330px) {
+	#pricing_page #pricing-icon-box li {
+		margin: 0 5% 0 5%;
+	}
 	#services .wrapper_services {
 		width: 100%;
 		margin: 0;
@@ -771,6 +774,11 @@ body {
 		}
 	}
 }
+@media only screen and (max-width: 1225px) {
+	#pricing_page .start_trial_box {
+		width: 55%;
+	}
+}
 @media only screen and (max-width: 1000px) {
 	#services #box {
 		width: 250px;
@@ -839,6 +847,9 @@ body {
 	}
 }
 @media only screen and (max-width: 770px) {
+	#pricing_page .start_trial_box {
+		width: 70%;
+	}
 	#form-section-2 {
 		input {
 			width: 100%;
@@ -880,6 +891,11 @@ body {
 		top: 23%;
 	}
 }
+@media only screen and (max-width: 690px) {
+	#pricing_page .start_trial_box {
+		width: 75%;
+	}
+}
 @media only screen and (max-width: 670px) {
 	.video-container {
 		top: 32px;
@@ -916,6 +932,11 @@ body {
 		top: 0 !important;
 	}
 }
+@media only screen and (max-width: 560px) {
+	#pricing_page .start_trial_box {
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 550px) {
 	#users .user_box {
 		margin-left: 2px;
@@ -930,6 +951,9 @@ body {
 	}
 }
 @media only screen and (max-width: 530px) {
+	#pricing_page .start_trial_box {
+		width: 100%;
+	}
 	#services #more-moduls {
 		margin-left: 44px !important;
 		width: 95%;
@@ -1022,11 +1046,21 @@ body {
 	}
 }
 @media only screen and (max-width: 428px) {
+	#pricing_page .radio-toolbar {
+		width: 200px;
+	}
+	#pricing_page .radio-toolbar label {
+		padding: 0 9%;
+	}
 	#services .video-box iframe {
 		height: 65%;
 	}
 }
 @media only screen and (max-width: 420px) {
+	#pricing_page #pricing-icon-box li {
+		display: block;
+		margin: 0 5% 5% 5%;
+	}
 	.col-xs-6 {
 		width: 50%;
 	}
@@ -1083,7 +1117,7 @@ body {
 	#smart-object {
 		top: 60px;
 	}
-	.btn {
+	#start-trial {
 		padding: 12px 36px 12px 35px !important;
 	}
 	#form {
@@ -1104,12 +1138,12 @@ body {
 	}
 }
 @media only screen and (max-width: 340px) {
-	.btn {
+	#start-trial {
 		padding: 12px 36px 12px 35px !important;
 	}
 }
 @media only screen and (max-width: 325px) {
-	.btn {
+	#start-trial {
 		padding: 9px 20px 9px 20px !important;
 	}
 }
