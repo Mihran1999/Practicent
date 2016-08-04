@@ -24,33 +24,40 @@ body {
 	width: 100%;
 	padding: 0;
 	.header {
-	position: relative;
-	height: 100px;
-	width: 100%;
-	padding: 24px 62px 0 62px;
-	z-index: 5;
-	font-family: Roboto;
-	font-size: 17px;
-	font-weight: normal;
-	font-stretch: condensed;
-	-webkit-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
-    -moz-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
-    -o-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
-    transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
-	.logo {
+		position: relative;
+		height: 100px;
+		width: 100%;
+		padding: 24px 62px 0 62px;
+		z-index: 5;
+		font-family: Roboto;
+		font-size: 17px;
+		font-weight: normal;
+		font-stretch: condensed;
+		-webkit-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    	-moz-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    	-o-transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);
+    	transition: 0.5s  cubic-bezier(0.42, 0, 0.21, 0.97);	
+	.logo_scroll {
 		position: absolute;
 		visibility: visible;
 		float: left;
-		z-index: 10;
-	}
-	.logo_scroll {
-		visibility: hidden;
-		float: left;
 		z-index: 8;
 	}
+	.navbar-default {
+		background-color: transparent;
+		border: 0;
+	}
+	.navbar {
+		min-height: 0;
+	}
+	.navbar-nav {
+		margin: 0 0;
+	}
 	.menu {
-		text-align: center;
-		padding: 0;
+		position: absolute;
+    	width: 100%;
+    	padding: 0;
+    	text-align: center;
 	} 
 	.menu {
 		a {
@@ -91,9 +98,8 @@ body {
 	}
 	#sign-in {
 		background-color: #249ed9;
-		padding: 7px 42px 7px 42px;
 		margin-top: 8px;
-		float: right;
+		padding: 7px 42px 7px 42px;
 		color: #fff;
 		-webkit-border-radius: 20px;
 		-moz-border-radius: 20px;
@@ -101,8 +107,21 @@ body {
 	}
 		#sign-in:hover {
 			text-decoration: none;
-		}
+		}	
 	}
+
+	/** Pricing-page **/
+
+	.pricing {
+    	background-color: #ffffff;
+    	.pricing_menu {
+    		a {
+    			color: #000000;
+    		}
+    	}
+    }
+
+    /****/
 }
 .header_content {
 	text-align: center;
@@ -217,14 +236,13 @@ body {
 	#button {
 		display: none;
 		float: right;
-		margin-top: 10px;
+		margin-top: -8px;
 		z-index: 6;
 	}
 }
 .for_mobile {
 	position: relative;
 	float: right;
-    top: 8px;
     right: 20px;
     display: block !important;
 }
@@ -687,6 +705,9 @@ body {
 
 /** start '@media queries' **/
 @media only screen and (max-width: 1382px) { 
+	#page_start .header .menu {
+		padding-left: 40px;
+	}
 	#page_start .header .logo {
 		margin-right: 10%; 
 	}
@@ -738,21 +759,23 @@ body {
 		#sign-in {
 			display: none;
 		}
-		#page_start .header .for_mobile  {
-			display: block;
-		}
 		.mobile_menu #button {
 			display: block;
 		}
 	}	
+	#page_start .header #sign-in {
+		right: 10px;
+		margin-top: 0;
+	}
 	#page_start .header .menu li {
 			padding: 0;
 			margin-right: 0; 
-		}
+	}
 	#page_start .header .menu {
 			float: none;
 			text-align: left;
-		}
+			padding: 0;
+	}
 }
 @media only screen and (min-width: 1235px) {
 	.header_menu_responsive {
@@ -932,7 +955,7 @@ body {
 		top: 0 !important;
 	}
 }
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 575px) {
 	#pricing_page .start_trial_box {
 		width: 100%;
 	}
@@ -951,9 +974,6 @@ body {
 	}
 }
 @media only screen and (max-width: 530px) {
-	#pricing_page .start_trial_box {
-		width: 100%;
-	}
 	#services #more-moduls {
 		margin-left: 44px !important;
 		width: 95%;
@@ -1003,6 +1023,9 @@ body {
 	}
 }
 @media only screen and (max-width: 445px) {
+	#pricing_page #pricing-icon-box li {
+		margin: 0 3% 0 3%;
+	}
 	.video-container {
 		top: 11px;
 	}
@@ -1047,10 +1070,10 @@ body {
 }
 @media only screen and (max-width: 428px) {
 	#pricing_page .radio-toolbar {
-		width: 200px;
+		width: 203px;
 	}
 	#pricing_page .radio-toolbar label {
-		padding: 0 9%;
+		padding: 0 11%;
 	}
 	#services .video-box iframe {
 		height: 65%;
@@ -1082,6 +1105,9 @@ body {
 	}
 }
 @media only screen and (max-width: 395px) {
+	#pricing_page_legal .count_box li {
+		margin: 0 20px 0 20px;
+	}
 	.col-xs-6 {
 		width: 50%;
 	}
@@ -1148,6 +1174,9 @@ body {
 	}
 }
 @media only screen and (max-width: 320px) {
+	#pricing_page_legal .count_box li {
+		margin: 0 10px 0 10px;
+	}
 	#page_start .header {
 		padding: 24px 15px 24px 15px;
 	}

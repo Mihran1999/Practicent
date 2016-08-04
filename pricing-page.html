@@ -15,39 +15,44 @@
 <body>
 	<div class="controller">
         <section id="page_start" class="col-md-12">
-            <header class="header custom_header_style" id="scrolling-header"> 
-                <div class="logo">
-                    <a href=""><img src="images/logo.png"></a>
-                </div>
-                <div class="logo_scroll">
-                    <a href=""><img src="images/logo-1.png"></a>
-                </div>    
-                <a href="" id="sign-in">Sign in</a> 
-                <div class="header_menu">
-                    <div class="menu-header-menu-container">
-                        <ul id="menu-header-menu" class="menu">
-                            <li><a href="http://features">FEATURES</a></li>
-                            <li><a href="http://pricing">PRICING</a></li>
-                            <li><a href="http://customers">CUSTOMERS</a></li>
-                            <li><a href="http://support">SUPPORT</a></li>
+            <header class="header pricing" id="scrolling-header"> 
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">    
+                        <div class="header_menu">
+                            <div class="menu-header-menu-container">
+                                <ul id="menu-header-menu" class="menu pricing_menu">
+                                    <li><a href="http://features">FEATURES</a></li>
+                                    <li><a href="http://pricing">PRICING</a></li>
+                                    <li><a href="http://customers">CUSTOMERS</a></li>
+                                    <li><a href="http://support">SUPPORT</a></li>
+                                </ul>
+                            </div>              
+                        </div>
+                    </div>
+                    <div class="logo_container">
+                        <ul class="nav navbar-nav navbar-left">
+                            <div class="logo_scroll">
+                                <a href=""><img src="images/logo-1.png"></a>
+                            </div> 
                         </ul>
-                    </div>              
-                </div>  
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="" id="sign-in">Sign in</a> </li>
+                        </ul>
+                    </div>
+                </nav>
 
                 <div class="mobile_menu">
-
                     <div id="button" class="animateing">
                         <div id="line" class="first"></div>
                         <div id="line" class="invisible_line"></div>
                         <div id="line" class="second"></div>
                         <div id="line" class="third"></div>
                     </div>
-
                     <div class="header_menu_responsive">
-                        <a href="" id="sign-in" class="for_mobile">Sign in</a>
                         <div class="menu-header-menu-container">
                             <ul class="menu">
-                                <li class=""><a href="http://features">FEATURES</a></li>
+                                <a href="" id="sign-in" class="for_mobile">Sign in</a>
+                                <li><a href="http://features">FEATURES</a></li>
                                 <li><a href="http://pricing">PRICING</a></li>
                                 <li><a href="http://customers">CUSTOMERS</a></li>
                                 <li><a href="http://support">SUPPORT</a></li>
@@ -60,7 +65,7 @@
         </section>   
 
         <section id="pricing_page" class="col-md-12">
-            <div class="start_trial_box">
+            <div class="col-md-5 start_trial_box">
                 <div id="text-controller">
                     <span>Get the Basic package.</span>
                     <p>Add Modules per user as you go</p>
@@ -96,13 +101,37 @@
                 <div class="radio-toolbar">
 
                     <input type="radio" id="radio1" name="radios" value="monthly">
-                    <label for="radio1">Monthly</label>
+                    <label for="radio1" id="right">Monthly</label>
                     <span class="slider"></span>
 
                     <input type="radio" id="radio2" name="radios" value="yearly" checked>
-                    <label for="radio2" id="ppp">Yearly</label>                  
+                    <label for="radio2" id="left">Yearly</label>                  
                 </div>
                 <button id="start-trial-pricing" class="btn btn-primary">START TRIAL</button>
+            </div>
+        </section>
+        <section id="pricing_page_legal" class="col-md-12">
+            <div class="count_box">
+                <span>Select legal and non-legal staff count</span>    
+                <ul>
+                    <li>
+                        <div class="count" id="minus">
+                            <span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="value">
+                            0
+                        </div>
+                        <span id="reset">RESET</span>
+                    </li>
+                    <li>
+                        <div class="count" id="plus">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>

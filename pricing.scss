@@ -1,3 +1,4 @@
+
 #pricing_page {
 	background-color: #e7f5fd;
     padding: 50px 15px 20px 15px;
@@ -10,7 +11,7 @@
     font-stretch: condensed;
 	.start_trial_box {
 		background-color: #ffffff;
-		width: 33%;
+		float: none;
 		margin: 0 auto;
 		padding: 20px;
 	}
@@ -41,7 +42,6 @@
 		font-weight: 400;
 		font-size: 2em;
 		padding: 0;
-		margin-bottom: 50px;
 		color: #000000;
 		span {
 			font-size: 0.6em;
@@ -52,7 +52,7 @@
 		position: relative;
 		max-width: 350px;
 		height: 37px;
-		margin: 0 auto;
+		margin: 75px auto;
 		border: 1px solid #000000;
 		border-radius: 15px;
 	}
@@ -67,10 +67,10 @@
     	z-index: 0;
     	border-radius: 20px;
     	background-color: #1ba0e0;
-    	-webkit-transition: 0.3s linear;
-    	-moz-transition: 0.3s linear;
-    	-o-transition: 0.3s linear;
-    	transition: 0.3s linear;
+    	-webkit-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    	-moz-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    	-o-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    	transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
 	}
 	.radio-toolbar  {
 		input[type="radio"] {
@@ -81,6 +81,7 @@
 		label {
 			position: relative;
 			top: -4px;
+			right: 10px;
     		display:inline-block;
     		padding:0 17%;
     		font-family:Arial;
@@ -88,20 +89,26 @@
     		font-weight: normal;
     		z-index: 5;
     		cursor: pointer;
-    		-webkit-transition: 0.3s linear;
-    		-moz-transition: 0.3s linear;
-    		-o-transition: 0.3s linear;
-    		transition: 0.3s linear;
+    		-webkit-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		-moz-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		-o-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
    		}
-	}	
+   		#right {
+   			right: 13px;
+   		}
+   		#left {
+   			left: 1px;
+   		}
+	}	 
 	input[type="radio"]:checked ~ span {
-		left: -3px;
+		left: -5px;
 	}
 	input[type="radio"]:checked + label {
 		color: #ffffff;
 	}
 	#start-trial-pricing {
-		margin-top: 75px;
+		margin-top: 35px;
 		margin-bottom: 75px;
 		padding: 12px 30px 12px 30px;
     	font-weight: 200;
@@ -111,5 +118,90 @@
 	}	
 }		
 
-
+#pricing_page_legal {
+	background-color: #ffffff;
+    padding: 90px 15px 190px 15px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 200;
+    font-stretch: condensed;
+    .count_box {
+    	span {
+    		font-size: 20px;
+    		font-weight: 400;
+    		color: #000000;
+    	}
+    	ul {
+    		padding: 0;
+    	}
+    	li {
+    		display: inline-block;
+    		margin: 0 30px 0 30px;
+    	}
+   		.count {
+   			position: relative;
+   			height: 67px;
+    		width: 67px;
+   			top: 5px;
+    		border: 2px solid #d7d7d7;
+    		border-radius: 50%;
+    		cursor: pointer;
+    		-webkit-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		-moz-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		-o-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		span {
+    			position: absolute;
+    			height: 3px;
+    			width: 20px;
+    			top: 49%;
+    			left: 0;
+    			right: 0;
+    			margin: 0 auto;
+    			background-color: #d7d7d7;
+    			-webkit-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    			-moz-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    			-o-transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    			transition: 0.3s cubic-bezier(0.42, 0, 0, 0.95);
+    		}
+    	}
+    	.count:hover {
+    		background-color: #d7d7d7;
+    	}
+    	.count:hover {
+    		span {
+    			background-color: #ffffff;
+    		}
+    	}
+    	#plus {
+    		span:nth-child(2) {
+    			-webkit-transform: rotate(90deg);
+    			-moz-transform: rotate(90deg);
+    			-o-transform: rotate(90deg);
+    			transform: rotate(90deg);
+    		}
+    	}
+    	#value {
+    		font-weight: 400;
+    		font-size: 3em; 
+    		color: #2e2e2e;
+    	}
+    	#reset {
+    		background-color: #249ed9;
+    		color: #ffffff;
+    		font-size: 16px;
+    		position: absolute;
+    		margin: 0 auto;
+    		padding: 3px;
+    		width: 70px;
+    		right: 0;
+    		left: 0;
+    		border-radius: 7px;
+    		cursor: pointer;
+    	}
+    }	
+}
 

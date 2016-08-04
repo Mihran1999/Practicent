@@ -42,5 +42,27 @@ $(document).ready(function() {
 	});
 }); 
 
+//Counter 
 
+var value = 0;
+
+$(document).ready(function() {
+  $('#minus').click(function(){
+    value -=1
+    if(value<=0)value=0;
+    document.getElementById('value').innerHTML = value;
+  });
+});    
+
+$(document).ready(function() {
+  $('#plus').click(function(){
+    value +=1
+    document.getElementById('value').innerHTML = value;
+  });
+});
 		
+$(document).ready(function() {
+  $('#reset').click(function(){
+    document.getElementById('value').innerHTML = value=0;
+  });
+});
