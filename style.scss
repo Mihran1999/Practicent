@@ -45,18 +45,19 @@ body {
   }
   .navbar-collapse {
     text-align: center;
+    margin: 0 -15px;
     border: 0;
     overflow: hidden;
     box-shadow: none;
   }
-  .navbar-collapse_home {
+  .navbar_collapse_home {
     background-color: #2e3640; 
   }
   .navbar_collapse_pricing {
     background-color: #ffffff;
   }
   .menu_items {
-    width: 760px;
+    width: 755px;
     margin: 3px auto;
     float: none;
     display: inline-block;
@@ -240,7 +241,7 @@ body {
 	}
 }
 #form-section-2 {
-		margin-right: 65px;
+		margin-right: 25px;
 		ul, li {
 			display: block;
 		}
@@ -674,10 +675,10 @@ body {
     .navbar-collapse.collapse {
       display: none!important;
     }
-   .header .navbar-collapse_home {
+   .header .navbar_collapse_home {
     border-top: 1px solid #ffffff;
   }
-  .header .navbar-collapse_pricing {
+  .header .navbar_collapse_pricing {
     border-top: 1px solid #000000;
   }
     .navbar-nav {

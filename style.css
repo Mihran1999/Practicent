@@ -201,15 +201,16 @@ body {
       padding-top: 0; }
     #page_start .header .navbar-collapse {
       text-align: center;
+      margin: 0 -15px;
       border: 0;
       overflow: hidden;
       box-shadow: none; }
-    #page_start .header .navbar-collapse_home {
+    #page_start .header .navbar_collapse_home {
       background-color: #2e3640; }
     #page_start .header .navbar_collapse_pricing {
       background-color: #ffffff; }
     #page_start .header .menu_items {
-      width: 760px;
+      width: 755px;
       margin: 3px auto;
       float: none;
       display: inline-block; }
@@ -347,7 +348,7 @@ body {
     margin-left: 60px; }
 
 #form-section-2 {
-  margin-right: 65px; }
+  margin-right: 25px; }
   #form-section-2 ul, #form-section-2 li {
     display: block; }
   #form-section-2 li {
@@ -695,9 +696,9 @@ body {
     padding: 0; }
   #page_start .navbar-collapse.collapse {
     display: none !important; }
-  #page_start .header .navbar-collapse_home {
+  #page_start .header .navbar_collapse_home {
     border-top: 1px solid #ffffff; }
-  #page_start .header .navbar-collapse_pricing {
+  #page_start .header .navbar_collapse_pricing {
     border-top: 1px solid #000000; }
   #page_start .navbar-nav {
     float: none !important;
