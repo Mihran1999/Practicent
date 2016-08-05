@@ -10,8 +10,6 @@
   font-stretch: condensed; }
   #pricing_page .start_trial_box {
     background-color: #ffffff;
-    float: none;
-    margin: 0 auto;
     padding: 20px; }
   #pricing_page #text-controller span {
     font-weight: 400; }

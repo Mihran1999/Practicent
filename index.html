@@ -10,61 +10,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/video-loader.js"></script>
 </head>
 <body>
 	<div class="controller">
 	    <section id="page_start" class="col-md-12">
-		    <header class="header custom_header_style" id="scrolling-header"> 
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">    
-                        <div class="header_menu">
-                            <div class="menu-header-menu-container">
-                                <ul id="menu-header-menu" class="menu">
-                                    <li><a href="http://features">FEATURES</a></li>
-                                    <li><a href="http://pricing">PRICING</a></li>
-                                    <li><a href="http://customers">CUSTOMERS</a></li>
-                                    <li><a href="http://support">SUPPORT</a></li>
-                                </ul>
-                            </div>              
-                        </div>
-                    </div>
-                    <div class="logo_container">
-                        <ul class="nav navbar-nav navbar-left">
-                            <div class="logo">
-                                <a href=""><img src="images/logo.png"></a>
+	    	<header class="header" id="scrolling-header">
+                <div class="menu-header-menu-container">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
                             </div>
-                            <div class="logo_scroll">
-                                <a href=""><img src="images/logo-1.png"></a>
-                            </div> 
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="" id="sign-in">Sign in</a> </li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <div class="mobile_menu">
-                    <div id="button" class="animateing">
-                        <div id="line" class="first"></div>
-                        <div id="line" class="invisible_line"></div>
-                        <div id="line" class="second"></div>
-                        <div id="line" class="third"></div>
-                    </div>
-                    <div class="header_menu_responsive">
-                        <div class="menu-header-menu-container">
-                            <ul class="menu">
-                                <a href="" id="sign-in" class="for_mobile">Sign in</a>
-                                <li><a href="http://features">FEATURES</a></li>
-                                <li><a href="http://pricing">PRICING</a></li>
-                                <li><a href="http://customers">CUSTOMERS</a></li>
-                                <li><a href="http://support">SUPPORT</a></li>
-                            </ul>
-                        </div>                  
-                    </div>
-                </div>  
-            </header>	
-	        </header>
+                            <div class="collapse navbar-collapse navbar-collapse_home" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav menu_items menu_items_home">
+                                    <li><a href="#">FEATURES</a></li>
+                                    <li><a href="#">PRICING</a></li>
+                                    <li><a href="#">CUSTOMERS</a></li>
+                                    <li><a href="#">SUPPORT</a></li>
+                                    <li><a href="#" id="sign-in" class="mobile">Sign In</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#" id="sign-in" class="dsp_none">Sign In</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>    
+            </header> 
 	        <div class="header_content">  
         		<span>LAW firm helps lawyers build a better practice.</span>
                 <p>Thousands of sales businesses are using law tool. Here is why:</p>              
