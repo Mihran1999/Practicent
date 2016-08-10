@@ -1,16 +1,15 @@
 
 //Responsive menu button click animation
 
- $(document).ready(function() {
-        $('#button').click(function() {
-          $('.header_menu_responsive').slideToggle('normal');
-          $('.first').toggleClass('rotate_first');
-     		  $('.invisible_line').toggleClass('invisible_line_rotate');
-     		  $('.second').toggleClass('rotate_second');
-     		  $('.third').toggleClass('rotate_third');
-          $('.header_menu_responsive').css('display', 'block !important');	
-        });
-    });
+$(document).ready(function() {
+  $('.navbar-toggle').click(function() {
+    $('.icon-bar-rotate-1').toggleClass('opacity-1');
+    $('.icon-bar-rotate-2').toggleClass('opacity-2');
+    $('.icon-bar-rotate-3').toggleClass('opacity-3');
+    $('.icon-bar-rotate-4').toggleClass('bar-4');
+    $('.icon-bar-rotate-5').toggleClass('bar-5');
+  });
+});
 
 // Scrolling header menu
 
@@ -37,8 +36,8 @@ $document.scroll(function() {
 $(document).ready(function() {
 	$('.service-smart-object').click(function() {
 		$(this).fadeOut(100);
-		$(this).next().children('div.video-box').css({'z-index': '6', 'opacity': '1', 'visibility': 'visible'})
-		$(this).next().children('div.img-box').css({'z-index': '5', 'opacity': '0', 'visibility': 'hidden'})
+		$(this).next().children('div.video-box').css({'z-index': '6', 'opacity': '1', 'display': 'block'})
+		$(this).next().children('div.img-box').css({'z-index': '5', 'opacity': '0'})
 	});
 }); 
 
